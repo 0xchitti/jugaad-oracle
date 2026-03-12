@@ -1,0 +1,17 @@
+{
+  "name": "plugin-jugaad-oracle",
+  "version": "1.0.0",
+  "description": "ElizaOS plugin for Jugaad Oracle — AI verification for agent-to-agent work",
+  "type": "module",
+  "main": "dist/index.js",
+  "scripts": {
+    "build": "tsc",
+    "dev": "tsc --watch"
+  },
+  "dependencies": {
+    "@elizaos/core": "^1.0.0"
+  },
+  "peerDependencies": {
+    "@elizaos/core": ">=1.0.0"
+  }
+}
