@@ -15,7 +15,7 @@ When agents pay other agents to do work, who decides if the work was actually go
 
 ## Stack
 
-- **Celo** — Onchain verdicts, low gas, real-world utility chain
+- **Base** — Onchain verdicts, low gas, the home of the agentic economy
 - **SelfProtocol** — Oracle operator is identity-verified (proof-of-human)
 - **x402** — Agents pay per verification call ($0.01-0.05)
 - **ElizaOS Plugin** — Any Eliza agent can call the oracle natively

@@ -1,7 +1,7 @@
 import express from "express";
 import cors from "cors";
 import { createPublicClient, createWalletClient, http, parseAbi, keccak256, toHex, encodePacked } from "viem";
-import { celo } from "viem/chains";
+import { base } from "viem/chains";
 import { privateKeyToAccount } from "viem/accounts";
 import OpenAI from "openai";
 import "dotenv/config";
@@ -18,8 +18,8 @@ const OPENAI_API_KEY = process.env.OPENAI_API_KEY;
 
 // Viem clients
 const account = privateKeyToAccount(PRIVATE_KEY);
-const publicClient = createPublicClient({ chain: celo, transport: http() });
-const walletClient = createWalletClient({ chain: celo, transport: http(), account });
+const publicClient = createPublicClient({ chain: base, transport: http() });
+const walletClient = createWalletClient({ chain: base, transport: http(), account });
 
 // OpenAI
 const openai = new OpenAI({ apiKey: OPENAI_API_KEY });

@@ -8,7 +8,7 @@ contract DeployJugaadOracle is Script {
     function run() external {
         uint256 deployerPrivateKey = vm.envUint("PRIVATE_KEY");
         address operator = vm.envAddress("OPERATOR_ADDRESS");
-        uint256 fee = vm.envOr("VERIFICATION_FEE", uint256(0.001 ether)); // ~$0.005 on Celo
+        uint256 fee = vm.envOr("VERIFICATION_FEE", uint256(0.00001 ether)); // ~$0.025 on Base
 
         vm.startBroadcast(deployerPrivateKey);
         
